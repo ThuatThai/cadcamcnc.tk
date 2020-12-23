@@ -15,62 +15,75 @@ body {
 
 /* Style the header */
 header {
-  background-color:orange;
+  background-color:darkolivegreen;
   padding: 10px;
   text-align: center;
   font-size: 20px;
   color: white;
 }
-
+ .menu{
+     text-decoration:none;
+     color:red;
+ }
 /* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 900px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-  color: green;
-  text-decoration: none;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
- 
-
-}
-
+    nav {
+        float: left;
+        width: 30%;
+        height: 980px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+        
+       }
+    .chung {
+        background-color: cadetblue;
+        color: white;
+        border: 2px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
+    .phanmemcad {
+        background-color:cadetblue;
+        color: white;
+        border: 2px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
 article {
   float: left;
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
   height: auto; /* only for demonstration, should be removed */
+  text-decoration:none;
 }
 
 /* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+        text-decoration: none;
+
+    }
 
 /* Style the footer */
-footer {
-  background-color: green;
-  padding: 7px;
-  text-align: center;
-  color: white;
-}
+    footer {
+        background-color: darkgreen;
+        padding: 7px;
+        text-align: center;
+        color: bisque;
+        font-size: 25px;
+    }
 
 /* Responsive layout - makes the two columns/boxes stack on top
  of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+    nav, article {
+        width: 100%;
+        height: 1000px;
+        text-decoration: none;
+        color:yellowgreen;
+    }
   
 }
 </style>
@@ -86,61 +99,41 @@ footer {
 </header>
 
 <section>
-  <nav>
-    <ul>
-	
-    <li><a href="index.html">Giới thiệu chung</a></li>
-      <li><a href="#">Phần mềm CAD</a>
-	<ul class="sub-menu">
-                    <li><a href="#">>>>Solidworks</a></li>
-                    <li><a href="#">>>>Powershape</a></li>
-                    <li><a href="#">>>>Rhinoceros 3D</a></li>
-                    <li><a href="#">>>>FreeCad</a></li>
-		     <li><a href="#">>>>SkechUp</a></li>
-         </ul>    
-      </li>
-      <li><a href="#">--Phần mềm CAD CAM--</a>
-	            
-	  <ul class="sub-menu">
-                    <li><a href="#">Creo-ProEngineer</a></li>
-                    <li><a href="#">Unigraphic NX</a></li>
-                    <li><a href="#">Catia</a></li>
-                    <li><a href="#">Cimatron</a></li>
-         </ul>    
-    </li>
-	  <li><a href="#">--Phần mềm CAM--</a>
-	  <ul class="sub-menu">
-                    <li><a href="#">MasterCam</a></li>
-                    <li><a href="#">FeatureCam</a></li>
-                    <li><a href="#">PowerMill</a></li>
-                    <li><a href="#">SolidCam</a></li>
-         </ul>  
-	    
-	    </li>
-	   <li><a href="#">--Phần mềm THIẾT KẾ NGƯỢC--</a>
-	      <ul class="sub-menu">
-                    <li><a href="#">Rapidform XOR</a></li>
-                    <li><a href="#">Geometry</a></li>
-              </ul> 
-	    
-	    </li>
-	  <li><a href="#">--Lập trình máy phay CNC--</a>
-	    <ul class="sub-menu">
-                    <li><a href="#">Tài liệu</a></li>
-                    <li><a href="#">Bài tập thực hành</a></li>
-              </ul> 
-	    
-	    </li>
-	  <li><a href="#">--Lập trình máy tiện CNC --</a>
-	                  <ul class="sub-menu">
-                    <li><a href="#">Tài liệu</a></li>
-                    <li><a href="#">Bài tập thực hành</a></li>
-              </ul> 
-	    </li>
-	  <li><a href="#">--Lập trình máy nhiều trục CNC--</a></li>
-	  <li><a href="#">--Kinh nghiệm gia công CNC--</a></li>
-    </ul>
-  </nav>
+   
+    <nav>
+        <div class="chung">
+            <h2> ABOUT US </h2>
+            <p>GIỚI THIỆU CHUNG</p>
+            <p>SƠ ĐỒ WEBSITE</p>
+        </div>
+
+        <div class="phanmemcad">
+            <h2>Phần mềm CAD</h2>
+            <p>Link download & hướng dẫn cài đặt</p>
+            <p>Hướng dẫn & kinh nghiệm sữ dụng</p>
+        </div>
+        <div class="phanmemcad">
+            <h2>Phần mềm CAD-CAM</h2>
+            <p>Link download & hướng dẫn cài đặt</p>
+            <p>Hướng dẫn & kinh nghiệm sữ dụng</p>
+        </div>
+        <div class="phanmemcad">
+            <h2>Phần mềm CAM</h2>
+            <p>Link download & hướng dẫn cài đặt</p>
+            <p>Hướng dẫn & kinh nghiệm sữ dụng</p>
+        </div>
+        <div class="phanmemcad">
+            <h2>Phần mềm THIẾT KẾ NGƯỢC</h2>
+            <p>Link download & hướng dẫn cài đặt</p>
+            <p>Hướng dẫn & kinh nghiệm sữ dụng</p>
+        </div>
+        <div class="phanmemcad">
+            <h2>KINH NGHIỆM </h2>
+            <p>THIẾT KẾ CAD</p>
+            <p>LẬP TRÌNH CAM-GIA CÔNG CNC</p>
+        </div>
+    </nav>
+
   
   <article>
       <h1>Giới Thiệu Chung</h1>
@@ -155,7 +148,7 @@ footer {
       <p>Nơi đăng tải những bài viết hay-những hướng dẫn bổ ích từ quý bạn đọc-đồng nghiệp xa gần </p>
       <h1> ------Tiêu chí của chúng tôi:chia sẽ và miễn phí-CHO ĐI CHÍNH LÀ NHẬN LẠI---------</h1>
       <p>
-          <img src="CADCAMCNC_DNMT.jpg" alt="cad cam cnc" width="750" height="510">
+          <img src="CADCAMCNC_DNMT.jpg" alt="cad cam cnc" width="850" height="580">
           
       </p>
 
